@@ -91,6 +91,22 @@
 						"type": "DatasetReference"
 					}
 				]
+			},
+			{
+				"name": "Stored Proces",
+				"type": "Wait",
+				"dependsOn": [
+					{
+						"activity": "Copy data1",
+						"dependencyConditions": [
+							"Succeeded"
+						]
+					}
+				],
+				"userProperties": [],
+				"typeProperties": {
+					"waitTimeInSeconds": 2
+				}
 			}
 		],
 		"annotations": []
