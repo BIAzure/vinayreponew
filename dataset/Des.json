@@ -1,0 +1,34 @@
+{
+	"name": "Des",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "AzureSqlDatabase1",
+			"type": "LinkedServiceReference"
+		},
+		"annotations": [],
+		"type": "AzureSqlTable",
+		"schema": [
+			{
+				"name": "EID",
+				"type": "varchar"
+			},
+			{
+				"name": "Esalary",
+				"type": "int",
+				"precision": 10
+			},
+			{
+				"name": "Ename",
+				"type": "varchar"
+			},
+			{
+				"name": "Eaddress",
+				"type": "varchar"
+			}
+		],
+		"typeProperties": {
+			"schema": "dbo",
+			"table": "azuredatades"
+		}
+	}
+}
